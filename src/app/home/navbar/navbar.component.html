@@ -1,0 +1,104 @@
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <div class="row">
+<div class="menu-left col-6">
+        <ul class="navbar-nav">
+                <li class="logo nav-item active">
+                        <a class="nav-link" href="#">
+                          <img style="width: 50px; height: 50px; position: absolute; margin-bottom: 10px; bottom: -15px"
+                          src="http://cdn.onlinewebfonts.com/svg/img_566102.png"/>
+                        </a>
+                      </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Chỗ ở</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Chuyến bay</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Taxi sân bay</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ưu đãi hôm nay</a>
+                </li> -->
+              </ul>
+</div>
+
+<div class="menu-right col-6 d-flex justify-content-end">
+        <!-- <button type="button" class="submit btn btn-success mr-3">GHI DANH BẠN</button> -->
+        <button type="button" routerLink="/login" class="btn btn-success mr-3">ĐĂNG NHẬP</button>
+        <button type="button" routerLink="/my-cart" class="btn btn-success">CART: {{ getCart.length }}</button>
+</div>
+    </div>
+  </nav>
+
+  <nav class="navbar nav-2 navbar-expand-sm bg-dark navbar-dark">
+        <div class="row d-flex justify-content-center align-items-center">
+            <h2 style="color: white">Everything is to your satisfaction</h2>
+                <!-- <div class="body-nav2 d-flex mr-3 align-items-center">
+                        <input type="text" class="form-control" id="usr">
+                      </div>
+                      <button type="button" class="mr-5 btn btn-success">GHI DANH</button>
+
+                <div class="body-nav2 d-flex mr-3 align-items-center">
+                        <input type="text" class="form-control" id="usr">
+                      </div>
+                      <button type="button" class="btn btn-success">TÌM KIẾM</button> -->
+        </div>
+      </nav>
+
+      <nav id="nav-fix" class="navbar nav-3 navbar-expand-sm bg-light navbar-light">
+            <div class="row">
+                <div class="col-7 d-flex justify-content-center">
+                    <label class="mr-2 mt-2">Chọn lọc</label>
+                        <div class="dropdown">
+                                <button type="button" class="btn-dropdown-1 btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                  Phổ biến
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Link 1</a>
+                                  <a class="dropdown-item" href="#">Link 2</a>
+                                  <a class="dropdown-item" href="#">Link 3</a>
+                                </div>
+                              </div>
+
+                              <div class="dropdown">
+                                    <button type="button" class="btn-dropdown-1 btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                      Giá
+                                    </button>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#">Link 1</a>
+                                      <a class="dropdown-item" href="#">Link 2</a>
+                                      <a class="dropdown-item" href="#">Link 3</a>
+                                    </div>
+                                  </div>
+
+                                  <div class="dropdown">
+                                        <button type="button" class="btn-dropdown-1 btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                          Khu vực
+                                        </button>
+                                        <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="#">Link 1</a>
+                                          <a class="dropdown-item" href="#">Link 2</a>
+                                          <a class="dropdown-item" href="#">Link 3</a>
+                                        </div>
+                                      </div>
+
+                                      <div class="dropdown">
+                                            <button type="button" class="btn-dropdown-1 btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                              Xếp hạng sao
+                                            </button>
+                                            <div class="dropdown-menu">
+                                              <a class="dropdown-item" href="#">Link 1</a>
+                                              <a class="dropdown-item" href="#">Link 2</a>
+                                              <a class="dropdown-item" href="#">Link 3</a>
+                                            </div>
+                                          </div>
+                        </div>
+                <div class="col-4 d-flex align-items-center">
+                    <label class="mr-2 mt-2">Search name product: </label>
+                        <div class="body-nav2 mr-3">
+                                <input type="text" [(ngModel)]="keySearch" (keyup)="search()" class="form-control" id="usr">
+                              </div>
+                </div>
+            </div>
+          </nav>

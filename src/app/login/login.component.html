@@ -1,0 +1,12 @@
+<div class="body-login">
+    <div class="content-login">
+        <div style="height: 100%; width: 100%; display: flex; 
+        justify-content: center;align-items: center; flex-direction: column">
+        <h2 style="font-weight: bold; margin-bottom: 80px">LOGIN</h2>
+          <div>User Name:</div>  <input type="text" [(ngModel)]="userName" class="form-control" id="usr">
+          <div>Password:</div>  <input type="text" [(ngModel)]="passWord" class="form-control" id="usr">
+          <button type="button"(click)="login()" style="margin-top: 20px" class="btn btn-success">ĐĂNG NHẬP</button>
+          <h5 *ngIf="error" style="color: red; margin-top: 10px">Not Found</h5>
+        </div>
+    </div>
+</div>

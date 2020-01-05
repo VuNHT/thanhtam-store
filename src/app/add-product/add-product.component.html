@@ -1,0 +1,35 @@
+<div class="body-add">
+    <div class="content-add">
+        <h4>ADMIN PRODUCT</h4>
+        <div style="width: 500px;margin-top: 10px">
+          <div>Name:</div>  <input type="text" [(ngModel)]="name" class="form-control" id="usr">
+          <div>Price:</div>  <input type="text" [(ngModel)]="price" class="form-control" id="usr">
+          <div>Image URL:</div>  <input type="text" [(ngModel)]="image" class="form-control" id="usr">
+          <div>Like:</div>  <input type="number" [(ngModel)]="like" class="form-control" id="usr">
+        </div>
+
+        <button type="button"(click)="addData()" style="margin-top: 20px" class="btn btn-success">ADD PRODUCT</button>
+        <h4 *ngIf="error" style="color: red">Not null</h4>
+    </div>
+
+    <div class="body-table">
+            <table mdbTable>
+                    <thead>
+                      <tr>
+                        <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr mdbTableCol *ngFor="let el of elements">
+                        <th scope="row">{{el.name}}</th>
+                        <td>{{el.price}}</td>
+                        <td class="imageUrl">{{el.image}}</td>
+                        <td>{{el.like}}</td>
+                        <td>
+        <button type="button"(click)="deleteData(el.id)" class="btn btn-success">DELETE</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+    </div>
+</div>

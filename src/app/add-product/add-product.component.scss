@@ -1,0 +1,21 @@
+.body-add {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .content-add {
+
+    }
+    .body-table {
+        width: 90%;
+        margin-top: 20px;
+        .imageUrl {
+        max-width: 100px !important;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        }
+    }
+}

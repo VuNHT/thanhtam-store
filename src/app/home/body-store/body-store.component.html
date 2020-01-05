@@ -1,0 +1,42 @@
+<div style="height: 100vh; margin-top: 50px">
+  <div class="container-fluid">
+      <div class="row">
+        <div *ngFor="let item of data" class="col-3" style="margin-bottom: 30px">
+          <div class="body-col">
+              <div class="clash-card__image clash-card__image--barbarian">
+                  <img [src]="item.image" />
+                </div>
+                <div style="display: flex;">
+                  <div style="width: 50%; text-align: center; border-right: solid 1px black">
+                    {{ item.name }}
+                  </div>
+                  <div style="width: 50%; text-align: center;">
+                    {{ item.price }}
+                  </div>
+                  </div>
+                  <div class="add-cart">
+                      <button type="button" (click)="addCart(item)" class="btn btn-success mr-3">ADD CART</button>
+                      <button type="button" (click)="addLike(item)" class="submit btn btn-success mr-3">LIKE: {{ item.like }}</button>
+                  </div>
+          </div>
+        </div>
+        <!-- <div class="col-3">
+            <div class="body-col"></div>
+        </div>
+        <div class="col-3">
+            <div class="body-col"></div>
+        </div>
+        <div class="col-3">
+            <div class="body-col"></div>
+        </div> -->
+      </div>
+  </div>
+
+  <footer class="page-footer font-small blue" style="background: #343a40">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3" style="color: white">© 2020 Big Rain</div>
+      <!-- Copyright -->
+    
+    </footer>
+</div>

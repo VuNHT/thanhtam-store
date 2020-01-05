@@ -1,0 +1,55 @@
+.navbar {
+    height: 80px;
+    .row {
+        width: 100%;
+        .logo {
+            border-right: solid 1px black;
+        }
+        .menu-right { 
+            button {
+                background: white;
+                border: solid 1px green;
+                color: green;
+            }
+            button:hover {
+                background: green;
+                color: white;
+            }
+            .submit {
+                background: white;
+                border: solid 1px red;
+                color: red;
+            }
+            .submit:hover {
+                background: red;
+                color: white;
+            }
+        }
+    }
+}
+
+.nav-2 {
+    .row {
+        height: 100%;
+        .body-nav2 {
+            height: 100%;
+        }
+    }
+}
+
+.nav-3 {
+    width: 100%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.55), 0 10px 10px rgba(0, 0, 0, 0.5);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    .col-7 {
+        border-right: 1px solid black;
+        .btn-dropdown-1 {
+            border-radius: 20px;
+        }
+    }
+    .col-4 {
+        input {
+            border-radius: 20px;
+        }
+    }
+}
